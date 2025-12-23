@@ -1,8 +1,8 @@
 # Algoritma menentukan bilangan ganjil atau genap
 
 1. Mulai
-2. siapkan variabel a yang bernilai 2
-3. bagi variabel a dengan 2
-4. apabila hasilnya habis dibagi 2 bilangan genap
-5. apabila ada sisanya maka bilangan ganjil
+2. masukan sebuah angka
+3. bagi angka dengan 2
+4. apabila angka dibagi 2 samadengan 0 maka tampilkan Bilangan genap
+5. apabila angka dibagi 2 tidak samdengan 0 maka tampilkan Bilangn ganjil
 6. selesai

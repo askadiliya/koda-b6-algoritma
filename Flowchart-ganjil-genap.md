@@ -5,8 +5,6 @@
 flowchart TD
     A@{ shape: circle, label: "Start" }
     B@{ shape: lean-r, label: "Input:Angka" }
-    C@{ shape: rounded, label: "Angka % 2 = 0" }
-
     C@{ shape: diamond, label: "Angka % 2 = 0" }
     D@{ shape: lean-r, label: "Output:Bilangan Ganjil" }
     E@{ shape: lean-r, label: "Output:Bilangan Genap" }

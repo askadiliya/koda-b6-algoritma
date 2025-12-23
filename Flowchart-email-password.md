@@ -1,23 +1,28 @@
-
-
 ```mermaid
 flowchart TD
-A@{ shape: circle, label: "Start" }
-B@{ shape: lean-r, label: "Input:Email dan Password" }
-C@{ shape: diamond, label: 'if email == " " && password == " "'}
-D@{ shape: lean-r, label: 'Output: "Email dan Password Harus diisi"' }
-E@{ shape: diamond, label: 'if email == "admin@gmail.com " && password == "1234 "'}
-F@{ shape: lean-r, label: 'Output: "Login Behasil"' }
-G@{ shape: lean-r, label: 'Output: "Email dan Passwod Salah"' }
-H@{ shape: dbl-circ, label: "Stop" }
+    A@{ shape: circle, label: "Mulai" }
+    B@{ shape: lean-r, label: "Input : email , password" }
+    C@{ shape: rect, label: "email = admin@mail.com , Password = 1234" }
+    D@{ shape: diamond, label: "email == null || password == null" }
+    E@{ shape: lean-r, label: 'Output : "Email dan Password harus diisi"' }
+    F@{ shape: diamond, label: "email = admin@mail.com && Password = 1234" }
+    G@{ shape: lean-r, label: 'Output : "Login Berhasil"' }
+    H@{ shape: lean-r, label: 'Output : "Email atau Password Salah"' }
+    I@{ shape: dbl-circ, label: "Selesai" }
 
 
 
-A-->B-->C
-C--True-->D-->B
-C--False-->E
-E--True-->F-->H
-E--False-->G-->C
+
+A --> B
+B --> C
+C --> D
+D --True --> E
+D --False --> F
+F --True --> G
+F --False --> H
+E --> I
+G --> I
+H --> I
 
 
 

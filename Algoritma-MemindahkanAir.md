@@ -1,4 +1,4 @@
-#Algoritma Memindah air dalam gelas
+# Algoritma Memindah air dalam gelas
 1. Mulai
 2. siapkan gelas A(teh) dan gelas B (Kopi)
 3. Siapkan gelas C yang kosong
